@@ -10,6 +10,6 @@ const app = express();
 app.use('/api', require('./routes'));
 
 // Enable cors
-app.use(cors({ origin: '*' }));
+app.use(cors({ 'Access-Control-Allow-Origin': '*' }));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
